@@ -9,6 +9,15 @@
  * @param {String} string 
  * @returns {String}
  */
-const firstNonRepeatedCharacter = function (string) {
-  // TODO: your solution here
-}
+function first(string){
+  debugger
+  for(var i=0;i<string.length;i++){
+      for(var j=0;j<string.length;j++){
+          if(string[i]!==string[j]){
+              return string[j]
+          }
+      }
+     
+  }
+
+  
