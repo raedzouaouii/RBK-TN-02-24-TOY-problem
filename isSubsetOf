@@ -16,9 +16,19 @@
  * See http://en.wikipedia.org/wiki/Subset for more on the definition of a
  * subset.
 */
+var Array=function (array){
+  this.array=array
+}
 Array.prototype.isSubsetOf = function (arr) {
-  // your code here
+  for(var i=0;i<arr.length;i++){
+    for(var j=0;j<this.array.length;j++){
 
-};
+      if(this.array[j]===arr[i]){
+        return true
 
-/*
+      }
+      return false
+    }
+  
+    }
+  };
